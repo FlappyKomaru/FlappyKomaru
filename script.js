@@ -1,7 +1,8 @@
 // SELECT CANVAS
 const cvs = document.getElementById("canvas");
 const ctx = cvs.getContext("2d");
-
+cvs.width = 428;
+cvs.height = 926;
 // GAME VARIABLES AND CONSTANTS
 let frames = 0;
 let birdFlapped = false;
@@ -1465,8 +1466,8 @@ const medal =
 function canvasScale() 
 {
     // CANVAS HEIGHT & WIDTH
-    cvs.height = window.innerHeight - 2;
-    cvs.width  = cvs.height * 0.72 - 2;
+    //cvs.height = window.innerHeight - 2;
+    //cvs.width  = cvs.height * 0.72 - 2;
 
     // BACKGROUND
     background.x = 0;
